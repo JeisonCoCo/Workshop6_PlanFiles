@@ -18,11 +18,11 @@ do
     opcion = MostrarMenu();
     switch (opcion)
     {
-        case "1": // Show
+        case "1": 
             MostrarPersonas(people);
             break;
 
-        case "2": // Add
+        case "2":
             try
             {
                 var nueva = CrearPersona(people);
@@ -35,24 +35,24 @@ do
             }
             break;
 
-        case "3": // Edit
+        case "3": 
             EditarPersona(people);
             break;
 
-        case "4": // Delete
+        case "4": 
             BorrarPersona(people);
             break;
 
-        case "5": // Save
+        case "5":
             helper.Write(path, people);
             Console.WriteLine("Cambios guardados.");
             break;
 
-        case "6": // Infor
+        case "6":
             InformePorCiudad(people);
             break;
 
-        case "0": // Exit
+        case "0":
             Console.WriteLine("Saliendo...");
             break;
 
